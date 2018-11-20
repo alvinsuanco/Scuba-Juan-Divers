@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Crete Round', serif;
+}
+
+/*Landing Page*/
+
+.jumbotron hr {
+	background-color: #fff; /*white*/
+}
+
+.jumbotron p {
+	color: #fff; /*white*/
+}
+
+.btn a {
+	text-decoration: none;
+	color: #fff; /*white*/
+}
+
+
+#jumbo-land {
+	height: 100vh;
+	padding-top: 5%;
+	/*background-color: #333; /*offblack*/*/
+	border-radius: 0; /*remove jumbo rounded corner*/
+	background-image: url(../images/landpagebg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: .9
+}
+
+.jumbotron h1 {
+	color: #f2f2f2; /*white*/
+}
+
+
+.img-thumbnail {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+}
+
+#navbar {
+	color: white;
+}
+
+
+/*end of Landing Page*/
+
+/*Home Page*/
+
+.navbar img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.navbar a {
+	font-size: 25px;
+}
+
+.navbar span {
+	margin-left: 10px;
+}
+
+
+
+
+#home-landing {
+	background-color: #333; /*offblack*/
+	color: #fff; /*white*/
+	padding: 20%;
+}
+
+#carousel-home {
+	height: 100vh;
+}
+
+#carousel-home a {
+	height: 90vh;
+	max-height: 90vh;
+}
+
+
+/*end of Home Page*/
+
+/*About Page*/
+
+.aboutimg {
+	height: 300px;
+	width: 350px;
+	margin: 10px;
+}
+
+
+
+/*end of About Page*/
+
+/*footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}*/

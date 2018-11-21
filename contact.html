@@ -10,12 +10,13 @@
 	<title>Juan Divers</title>
 
 	<!-- Fontawesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- Animate CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Oxygen" rel="stylesheet">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -25,8 +26,119 @@
 
 
 </head>
+
 <body>
 
+	<!-- Start of Navigation Section -->
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="assets/images/juanlogo.jpg"> Juan Divers </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pagsection">
+				<span class="navbar-toggler-icon"></span>	
+			</button>
+			<div class="collapse navbar-collapse" id="pagsection">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link " href="home.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="service.html">Service</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div> <!-- end of div list -->
+		</div> <!-- end of container-fluid -->
+	</nav> <!-- end of navigation section -->
+	<!-- End of Navigation Section -->
+
+	<!-- Start of Social and Google Map Section -->
+		
+	<h2 class="contact-us">Contact Us</h2>
+		
+	<div class="row">
+
+		<div class="col-12 col-md-6 col-lg-6">
+			<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124013.24772912436!2d120.83915514302407!3d13.753890010427053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bda9f3de87deef%3A0xffeb8adac8303565!2sJuan+Divers!5e0!3m2!1sen!2sph!4v1542700137647" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div> <!-- this is for the left side -->
+
+		<div id="right-col" class="col-12 col-md-6 col-lg-6">
+
+			<section class="info">
+				<h2>Juan Divers Scuba Diving</h2>
+				<small>Your diving expedition begins here!</small>
+
+				<ul>
+					<li><i class="fas fa-map-marker-alt"></i> Bagalangit Mabini, Batangas</li>
+
+					<li><i class="fas fa-phone-volume"></i> (+63) 917 708 1673 (Globe) / (+63) 908 815 8749 (Sun)</li>
+
+					<li><a href="mailto:juandivers@gmail.com?subject=See%20you%20at%20the%20dive"><i class="fas fa-envelope"></i> juandivers@gmail.com</a></li>
+				</ul>
+
+				<h3> Follow Us </h3>
+				<a href="https://www.facebook.com/JuanDivers1/"><img class="social-img" src="assets/images/fb.png" alt="facebook.com"></a>
+				<a href="https://www.facebook.com/JuanDivers1/"><img class="social-img" src="assets/images/instagram.jpeg" alt="instagram.com"></a>
+			</section> <!-- end of contact us section -->
+		</div> t<!-- his is for the right side -->
+	</div> <!-- end of div row -->
+
+	<!-- End of Social and Google Maps -->
+
+	<!-- Operation and Booking section -->
+
+	<div class="operation">
+		<hr>
+		<h3>Hours of Operation</h3>
+		<p>8:00 am to 5pm PHT, Monday to Saturday</p>
+		<hr>
+
+		<h3>How to get there</h3>
+
+		<p class="text-justify m-3"><strong>By car</strong>. From Manila, it will take you about 2 to 3 hours depending on traffic. Simply enter SLEX (South Luzon Expressway) from Magallanes or Alabang Muntinlupa and go all the way to Star Toll, then exit at Diversion Bauan exit Rotonda.</p>
+
+		<p class="text-justify m-3"><strong>By bus</strong>. Go to the bus station located near LRT Gil Puyat Station and take a bus that has a signboard that goes to Batangas City (Calabarson). Make sure that you pick the right bus since there are different buses that go to various locations in Batangas. Once you reach Batangas, get a jeepney with a signboard Mabini-Batangas or Mabini Anilao.</p>
+		<hr>
+	</div> <!-- end of operation div -->
+
+	<div> <!-- booking div -->
+		<p class="m-3"><i class="fas fa-book"></i>Book your diving session now, and our customer service will contact you back for more details.</p>
+
+		<form class="form-details">
+			<div class="form-group">
+				<label for="Name"> Full Name: </label>
+				<input id="Name" class="form-control" type="text" placeholder="Enter your Full Name here">
+			</div> <!-- end of username form group -->
+
+			<div class="form-group">
+				<label for="email"> Email: </label>
+				<input id="email" class="form-control" type="email" placeholder="Enter your Email here">
+			</div> <!-- end of email form group -->
+
+			<div class="form-group">
+				<label for="contact">Contact: </label>
+				<input id="contact" class="form-control" type="number" placeholder="Enter your Username">
+			</div> <!-- end of contact form group -->
+
+			<div class="form-group">
+				<label for="message"> Message: </label>
+				<textarea id="message" class="form-control" placeholder="Enter you Message Here"></textarea>
+			</div> <!-- end of message form group -->
+
+			<button class="btn btn-block btn-outline-success form-btn mx-auto"> Submit </button>
+		</form> <!-- end of forms -->
+	</div> <!-- end of booking div -->
+
+	<!-- end of Operation and Booking section -->
+
+	<footer class="footer bg-primary">
+		<p class="text-center mb-0 p-2">Alvin G. Suanco | Tuitt Coding Boothcamp</p>
+	</footer>
 	
 
 
@@ -42,6 +154,7 @@
 
 
 
+	<!-- End of Social and Google Map Section -->
 
 
 
@@ -58,11 +171,22 @@
 
 
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
-<script src="assets/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="assets/js/bootstrap.min.js"></script>
 
 
 

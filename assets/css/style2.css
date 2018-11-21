@@ -1,0 +1,45 @@
+/*About2 PAGE*/
+
+#jumbotron-about {
+	background-color: #141414;
+	height: 90vh;
+	border-radius: 0;
+}
+
+#landing-about {
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 20vh;
+	font-family: 'Monstserrat', sans-serif;
+}
+
+.about-tags {
+	font-weight: bold;
+	font-family: 'Monstserrat', sans-serif;
+}
+
+#mission {
+	height: 100%;
+	background-color: #141414;
+	color: #f2f2f2;
+}
+
+
+/*Gallery2 Page*/
+
+#head-gal{
+	margin-top: 3%;
+	background-color: #141414;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+
+
+/*end of Gallery2*/
+
+/*footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}*/

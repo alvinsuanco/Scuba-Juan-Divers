@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Crete+Round|Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Oxygen" rel="stylesheet">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -27,53 +27,87 @@
 </head>
 <body>
 
-	<section id="navbar">
-		<div class="nav-container navbar navbar-expand-md navbar-dark bg-dark">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggle-icon"></span>
+	<!-- Navigation Section -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="assets/images/juanlogo.jpg"> Juan Divers </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pagsection">
+				<span class="navbar-toggler-icon"></span>	
 			</button>
-			<a class="nav-brand" href="#"><img src="assets/images/juanlogo.jpg"><span>Juan Divers</span></a>
-			<div id="navbar-nav" class="collapse navbar-collapse">
-				<a class="nav-link ml-auto" href="#">Home</a>
-				<a class="nav-link active" href="#">About</a>
-				<a class="nav-link" href="#">Service</a>
-				<a class="nav-link" href="#">Contact</a>
-			</div> <!-- end of nav class -->
-		</div> <!-- end of nav-container -->
-	</section> <!-- end of nav-section -->
+			<div class="collapse navbar-collapse" id="pagsection">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="home.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="service.html">Service</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div> <!-- end of div list -->
+		</div> <!-- end of container-fluid -->
+	</nav> <!-- end of navigation section -->
 
-	<section class="container">
+	<!-- Main Section -->
+
+	<div class="container img-fluid">
+
 		
-		<h2 class="mt-1">About Us</h2>
+		<div class="about-image">
+			<img src="assets/images/aboutimg3.png" alt="scuba lesson">
+			<h2>About our Company</h2>
+			<p>We are PROFESSIONAL SCUBA DIVING INTERNATIONAL (PSI) – Juan Divers. We are a group of divers and diving instructors duly recognized by the Worldwide Underwater Federation (CMAS) and the National Association of Underwater Instructors (NAUI). Our origins is the beautiful Brazil. Our rediscovery of the beauty of the Philippines’ 7,107 captivating islands and its magnificent seas has brought us halfway around the world to infect people with that same zest for diving and underwater exploration.</p>
+		</div>
 
-		<div class="row">
-			<div class="col-lg-6 col-md-4 col-12">
-				<img src="assets/images/aboutimg1.jpg" class="aboutimg border border-info rounded-right">
-			</div> <!-- left col -->
 
-			<div class="col-lg-6 col-md-8 col-12">
-				<p> Juan Divers aims to teach <abbr title="Self-Contained Underwater Breathing Apparatus">SCUBA</abbr> diving in a way that is affordable and enjoyable while increasing awareness to the importance of conservation of our oceans </p>
-				<p>If you are looking for some good advanture and meeting new friends above and below water, you are in the right place! Welcome to Juan Divers!</p>
-			</div> <!-- right col -->
+		<div class="about-image">
+			<img src="assets/images/aboutimg4.jpg" alt="scuba lesson one on one">
+			<h2>Mission</h2>
+			<p>This Group inteds to introduce <abbr title="Self-Contained Underwater Breathing Apparatus">SCUBA</abbr> Diving to the Filipino community in a way that is affordable, practical, fun and enhoyable while promoting and giving awareness to the importance of consercation and protection of marine life and its oceans.</p>
+			<p>Juan Divers aims to teach SCUBA diving in a way that is affordable and enjoyable while increasing awareness to the importance of conservation of our oceans.</p>
 		</div>
 
 		
-		<h2>Mission</h2>
-		<div class="row">
-			<div class="col-lg-6 col-md-8 col-12">
-				<p>This group intends to introduce <abbr title="Self-Contained Underwater Breathing Apparatus">SCUBA</abbr> Diving to the Filipino community in a wa tat is affordable, practical, fun and enjoyable while promoting and giving awareness to the importance of conservation and protection of marine life and its oceans.
-				</p>
-			</div> <!-- left col -->
+		
+	</div>
 
-			<div class="col-lg-6 col-md-4 col-12">
-				<img src="assets/images/aboutimg2.jpg" class="aboutimg border border-info rounded-left">
-			</div> <!-- right col -->
+	<section class="parallax">`</section>
 
+	<div class="container img-fluid">
+		<div class="about-image">
+			<h2>WE LOVE NATURE!</h2>
+			<p>The earth is too beautiful to waste, with the Philippines as the global epicentre of marine biodiversity. As a non-government organization that aims to protect and preserve the Philippines’ rich marine life through diving and exploration, we actively seek and keep an eye for unexplored diving sites. With this, we establish  contacts with local authorities to help us implement advance protection methods on the sites and and rescue trainings to help local water rescue units more efficiently carry out rescue operations. Our main goal in each exploration is to help protect and preserve these God-given resources so that the next generations can experience what we are enjoying today.</p>
+			<img src="assets/images/aboutimg5.jpg" alt="scuba lesson one on one">
 		</div>
 
-		
-	</section> <!-- end of container -->
+		<div class="about-image">
+			<h2>WE LOVE NATURE!</h2>
+			<p>The earth is too beautiful to waste, with the Philippines as the global epicentre of marine biodiversity. As a non-government organization that aims to protect and preserve the Philippines’ rich marine life through diving and exploration, we actively seek and keep an eye for unexplored diving sites. With this, we establish  contacts with local authorities to help us implement advance protection methods on the sites and and rescue trainings to help local water rescue units more efficiently carry out rescue operations. Our main goal in each exploration is to help protect and preserve these God-given resources so that the next generations can experience what we are enjoying today.</p>
+			<img src="assets/images/aboutimg5.jpg" alt="scuba lesson one on one">
+		</div>
 
+
+
+
+
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+	
 	
 
 
@@ -86,7 +120,7 @@
 
 
 
-	<footer class="footer bg-primary fixed-bottom">
+	<footer class="footer bg-primary">
 		<p class="text-center mb-0 p-2">Alvin G. Suanco | Tuitt Coding Boothcamp</p>
 	</footer>
 

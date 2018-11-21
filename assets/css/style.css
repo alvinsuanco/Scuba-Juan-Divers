@@ -2,9 +2,13 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Libre Baskerville', serif;
-	font-family: 'Crete Round', serif;
-}
+	font-family: 'Oxygen', sans-serif;
+	font-family: 'Merriweather', serif;
+} /*CSS Reset*/
+
+html { 
+	scroll-behavior: smooth;
+ }
 
 /*Landing Page*/
 
@@ -20,7 +24,6 @@
 	text-decoration: none;
 	color: #fff; /*white*/
 }
-
 
 #jumbo-land {
 	height: 100vh;
@@ -38,7 +41,6 @@
 	color: #f2f2f2; /*white*/
 }
 
-
 .img-thumbnail {
 	height: 250px;
 	width: 250px;
@@ -48,7 +50,6 @@
 #navbar {
 	color: white;
 }
-
 
 /*end of Landing Page*/
 
@@ -68,9 +69,6 @@
 	margin-left: 10px;
 }
 
-
-
-
 #home-landing {
 	background-color: #333; /*offblack*/
 	color: #fff; /*white*/
@@ -86,23 +84,87 @@
 	max-height: 90vh;
 }
 
-
 /*end of Home Page*/
 
 /*About Page*/
 
-.aboutimg {
-	height: 300px;
-	width: 350px;
-	margin: 10px;
+
+.about-image img {
+	width: 80%;
+	height: 200px;
 }
 
+.parallax {
+
+	background-image: url(../images/parallaximg1.jpg);
+	width: 100%;
+	height: 40vh;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*end of About Page*/
 
-/*footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}*/
+
+
+
+/*Contact Page*/
+
+#header-row {
+	padding: 0;
+}
+
+.contact-us {
+	margin: 20px 0 20px 20px;
+	padding: 0;
+}
+
+.maps {
+	margin-left: 15px;
+}
+
+.info li {
+	margin: 20px 0;
+}
+
+#right-col {
+	padding-right: 0;
+}
+
+ul {
+	list-style: none;
+
+}
+
+.contact-us > ul > li{
+	margin: 10px;
+	padding: 10px;
+}
+
+
+.social-img {
+	height: 50px;
+	width: 50px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 50%;
+}
+
+.operation {
+	text-align: center;
+}
+
+.form-details {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.form-btn {
+	width: 50%;
+}
+
+/*End of Contact Page*/

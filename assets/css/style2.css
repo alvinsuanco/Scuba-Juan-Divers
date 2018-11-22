@@ -35,6 +35,20 @@
 	letter-spacing: 0.5em;
 }
 
+#home-landing {
+	background-color: #333; /*offblack*/
+	color: #fff; /*white*/
+	padding: 20%;
+}
+
+#carousel-home {
+	height: 100vh;
+}
+
+#carousel-home a {
+	height: 90vh;
+	max-height: 90vh;
+}
 
 /*end of Gallery2*/
 

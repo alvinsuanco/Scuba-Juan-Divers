@@ -11,7 +11,7 @@ html {
  }
 
 body {
-	background-color: #FFFDFD;
+	background-color: #F7F7F8;
 }
 
 /*Landing Page*/
@@ -41,8 +41,9 @@ body {
 	opacity: .9
 }
 
-.jumbotron h1 {
-	color: #f2f2f2; /*white*/
+.land-font {
+	color: #C9F0FF;
+	font-weight: bold;
 }
 
 .Juandiverslogo {
@@ -58,6 +59,13 @@ body {
 /*End of Landing Page*/
 
 /*Navigation Section*/
+
+#navbtn {
+	width: 140px;
+	height: 50px;
+
+
+}
 
 .navbar img{
 	height: 50px;
@@ -81,6 +89,15 @@ body {
 	height: 90vh;
 }
 
+.first {
+	height: 90vh;
+}
+
+.next-prev{
+	padding-left: 20px;
+
+}
+
 .expedition-note {
 	margin-top: 100px;
 	text-align: center;
@@ -96,7 +113,7 @@ body {
 
 #carousel-card {
 	margin-top: 100px;
-/*	background-color: #E8E6E6;*/
+	/*border: 1px solid black;*/
 	height: 450px;
 	width: 90%;	
 }
@@ -109,7 +126,7 @@ body {
 }
 
 .card-bg {
-	border: 1px solid black;
+	border: 1px dashed black;
 }
 
 .card-img9 {
@@ -119,6 +136,15 @@ body {
 
 .dive-icon {
 	color: maroon;
+}
+
+.video-section {
+	/*background-color: #E8E6E6;*/
+	/*padding: 10px;*/
+}
+
+.video {
+	margin-left: 30%;
 }
 
 /*End of Home Page*/
@@ -220,4 +246,104 @@ ul {
 	color: indianred;
 }
 
+.img-anilao {
+	height: 500px;
+	width: 600px;
+	margin-left: 20%;
+	padding: 20px;
+}
+
+
 /*End of Contact Page*/
+
+/*Footer*/
+
+footer {
+	height: 60px;
+}
+
+.social-icon {
+	height: 40px;
+	width: 40px;
+	margin: 3px;
+	border-radius: 40%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Quiries*/
+
+/*mobile device*/
+@media only screen and (max-width: 400px) {
+	.media-img {
+		display: none;
+	}
+
+	.video {
+		display: none;
+	}
+
+	#carousel-card {
+		height: 10px;
+	}
+
+	.img-anilao {
+		height: 250px;
+		width: 300px;
+		padding: 10px;
+		margin-left: 30px;
+	}
+
+	.div-col { 
+		padding-left: 2px;
+		margin: 0;
+	}
+
+	.maps {
+		height: 300px;
+		width: 350px;
+	}
+
+	
+
+}
+
+
+
+
+/*Table Styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+
+
+
+/*Desktop Style*/
+@media only screen and (min-width: 961px) {
+
+}

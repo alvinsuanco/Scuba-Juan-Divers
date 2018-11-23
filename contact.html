@@ -9,6 +9,9 @@
 
 	<title>Juan Divers</title>
 
+	<!-- Fav icon -->
+	<link rel="icon" type="image/jpg/png" href="assets/images/juanlogo.jpg">
+
 	<!-- Fontawesome icon -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -51,6 +54,9 @@
 					<li class="nav-item">
 						<a class="nav-link active" href="contact.html">Contact</a>
 					</li>
+					<li class="nav-item ml-1">
+						<button id="navbtn" type="button" class="btn btn-block btn btn-outline-primary btn-lg form-btn" data-toggle="modal" data-target="#register">Dive Book</button>
+					</li>
 				</ul>
 			</div> <!-- end of div list -->
 		</div> <!-- end of container-fluid -->
@@ -59,12 +65,12 @@
 
 	<!-- Start of Social and Google Map Section -->
 
-	<section class="container-fluid">
+	<section class="container-fluid pr-0">
 		
 		<h4 class="contact-us contactfont">Get in touch</h4>
 			
 		<div class="row">
-			<div class="col-12 col-md-6 col-lg-6">
+			<div class="col-12 col-md-6 col-lg-6 div-col">
 				<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124013.24772912436!2d120.83915514302407!3d13.753890010427053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bda9f3de87deef%3A0xffeb8adac8303565!2sJuan+Divers!5e0!3m2!1sen!2sph!4v1542700137647" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div> <!-- this is for the left side -->
 
@@ -73,15 +79,24 @@
 					<h2 class="contactfont">Juan Divers Scuba Diving</h2>
 					<small>Your diving expedition begins here!</small>
 					<ul>
-						<li><i class="fas fa-map-marker-alt"></i> Bagalangit Mabini, Batangas</li>
+						<li><i class="fas fa-map-marker-alt dive-icon"></i> Bagalangit Mabini, Batangas</li>
 
-						<li><i class="fas fa-phone-volume"></i> (+63) 917 708 1673 (Globe) / (+63) 908 815 8749 (Sun)</li>
+						<li><i class="fas fa-phone-volume dive-icon"></i> (+63) 917 708 1673 (Globe) / (+63) 908 815 8749 (Sun)</li>
 
-						<li><a href="mailto:juandivers@gmail.com?subject=See%20you%20at%20the%20dive"><i class="fas fa-envelope"></i> juandivers@gmail.com</a></li>
+						<li><a href="mailto:juandivers@gmail.com?subject=See%20you%20at%20the%20dive"><i class="fas fa-envelope dive-icon"></i> juandivers@gmail.com</a></li>
+						<li><a href="#"><img class="social-icon mb-3" src="assets/images/fb.jpeg"></a>
+							<a href="#"><img class="social-icon mb-3" src="assets/images/instagram.jpeg"></a>
+							<a href="#"><img class="social-icon mb-3"src="assets/images/youtube.png"></a>
+							<a href="#"><img class="social-icon mb-3"src="assets/images/twitter.jpeg"></a>
+						</li>
+
+
+			
 					</ul>
+					<button type="button" class="btn btn-block btn-outline-info form-btn" data-toggle="modal" data-target="#register">Dive Book</button>
 
 				</section> <!-- end of contact us section -->
-			</div> t<!-- his is for the right side -->
+			</div><!-- his is for the right side -->
 		</div> <!-- end of div row -->
 	</section> <!-- /operation container -->
 
@@ -91,48 +106,41 @@
 
 	<div class="operation">
 		<hr>
-		<h3 class="contactfont">Hours of Operation</h3>
-		<p>8:00 am to 5pm PHT, Monday to Saturday</p>
-		<hr>
+		<h3 class="contactfont font-weight-bold">Hours of Operation</h3>
+		<p class="mb-1">8:00 am to 5pm PHT, Monday to Friday</p>
+		<p class="mb-4">10:00 am to 5pm PHT, Saturday to Sunday</p>
+		<hr class="mb-4">
+	</div> <!-- end of operation div -->
 
-		<h3 class="contactfont">How to get there</h3>
+	<div class="container pr-0">
+		<h3 class="contactfont font-weight-bold text-center mb-4">How to get there?</h3>
+
+		<h5>To get to Anilao from Manila via public transport:</h5>
+			<ol class="m-4">
+				<li class="mb-2 text-justify">
+					Catch a Batangas City bound bus in Buendia, Cubao or Alabang (Jam Liner, JAC, Alps, Tritran, etc), fare ranges from P140 to P160 and travel time is at least 1.5 hours during off-peak hours. Buses bound to Batangas City leave almost every hour, 24 hours a day. Avoid Batangas City via Lipa as travel time takes longer.
+				</li>
+				<li class="mb-2 text-justify">
+					Get off at Batangas City Bus Terminal and transfer to a Mabini bound jeep to take you to Anilao Port, fare is P40 per pax and travel time is around 45 minutes
+				</li>
+
+				<li class="mb-5 text-justify">
+				 	Get off at Batangas City Bus Terminal and transfer to a Mabini bound jeep to take you to Anilao Port, fare is P40 per pax and travel time is around 45 minutes
+				</li>
+			</ol>
 
 		<p class="text-justify m-3"><strong>By car</strong>. From Manila, it will take you about 2 to 3 hours depending on traffic. Simply enter SLEX (South Luzon Expressway) from Magallanes or Alabang Muntinlupa and go all the way to Star Toll, then exit at Diversion Bauan exit Rotonda.</p>
 
 		<p class="text-justify m-3"><strong>By bus</strong>. Go to the bus station located near LRT Gil Puyat Station and take a bus that has a signboard that goes to Batangas City (Calabarson). Make sure that you pick the right bus since there are different buses that go to various locations in Batangas. Once you reach Batangas, get a jeepney with a signboard Mabini-Batangas or Mabini Anilao.</p>
 		<hr>
-	</div> <!-- end of operation div -->
-	
 
-	<div> <!-- booking div -->
-		<p class="m-3"><i class="fas fa-book"></i>Book your diving session now, and our customer service will contact you back for more details.</p>
+			
 
-		<form class="form-details">
-			<div class="form-group">
-				<label for="Name"> Full Name: </label>
-				<input id="Name" class="form-control" type="text" placeholder="Enter your Full Name here">
-			</div> <!-- end of username form group -->
+			<figure>
+				<img class="img-anilao" src="assets/images/anilao.jpg" alt="Anilo, Batangas Philippines">
+			</figure>
+	</div>
 
-			<div class="form-group">
-				<label for="email"> Email: </label>
-				<input id="email" class="form-control" type="email" placeholder="Enter your Email here">
-			</div> <!-- end of email form group -->
-
-			<div class="form-group">
-				<label for="contact">Contact: </label>
-				<input id="contact" class="form-control" type="number" placeholder="Enter your Username">
-			</div> <!-- end of contact form group -->
-
-			<div class="form-group">
-				<label for="message"> Message: </label>
-				<textarea id="message" class="form-control" placeholder="Enter you Message Here"></textarea>
-			</div> <!-- end of message form group -->
-
-			<button class="btn btn-block btn-outline-success form-btn mx-auto"> Submit </button>
-		</form> <!-- end of forms -->
-	</div> <!-- end of booking div -->
-
-	<!-- end of Operation and Booking section -->
 
 	<footer class="footer bg-primary">
 		<p class="text-center mb-0 p-2">Alvin G. Suanco | Tuitt Coding Boothcamp</p>
@@ -140,20 +148,144 @@
 	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 	<!-- End of Social and Google Map Section -->
 
+	<!-- ========
+	    Modal 
+	======== -->
+
+	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header bg-info text-white">
+	        <h5 class="modal-title" id="exampleModalLabel">Dive Book</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      <!-- registration form -->
+	      <form>
+	      	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<strong>Hurry!</strong> Discount on early book this summer.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			  <div class="form-group">
+			  	<h5 class="mb-4">Basic Info</h5>
+			    <label for="name"> Full Name:</label>
+			    <input type="text" class="form-control" id="name">
+			  </div>
+			  <div class="form-group">
+			    <label for="email"> Email:</label>
+			    <input type="email" class="form-control" id="email">
+			  </div>
+			  <div class="form-group">
+			    <label for="contact"> Contact:</label>
+			    <input type="number" class="form-control" id="contact">
+			  </div>
+			  <div class="form-group">
+			    <label for="contact"> Dive Date:</label>
+			    <input type="date" class="form-control" id="date">
+			  </div>
+			   <div class="form-group">
+			   	<label for="role"> Course:</label>
+			   	<select class="custom-select">
+			   		<option value="other">Others</option>
+			   		<option value="open water diver">Open Water Diver</option>
+					<option value="advanced open water diver">Advanced Open Water Diver</option>
+					<option value="emergency first response">Emergency First Response</option>
+					<option value="rescue diver">Rescue Diver</option>
+					<option value="Divemaster Course">Divemaster Course</option>
+					<option value="Divemaster Course">Into Dive 1</option>
+					<option value="Divemaster Course">Dive 2-6</option>  
+			   	</select>
+			   </div>
+
+			   <hr class="my-4">
+			   <h5 class="mb-4"> Additional Dive</h5>
+
+			   <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Fun Dive</span>
+			   		</label>
+			   </div>
+			   <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Free Dive</span>
+			   		</label>
+			   </div>
+			    <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Snorkling</span>
+			   		</label>
+			   </div>
+
+			   <hr class="mb-4">
+			   <h5 class="mb-4">Payment Info</h5>
+
+			   <div class="form-row ">
+				   <div class="col-lg-6">
+				    <label for="cc-num">Card Number:</label>
+				    <input class="form-control" id="cc-num" type="text">
+			   </div>
+
+			   <div class="col-lg">
+				    <label for="zip">Zip Code:</label>
+				    <input class="form-control" id="zip" type="text">
+			   </div>
+
+			   <div class="col-lg">
+				    <label for="cvv">CVV:</label>
+				    <input class="form-control" id="cvv" type="text">
+				   </div>
+			   </div>
+
+			   <div class="form-row">
+			   		<label class="col-lg-12">Expiration Date:</label>
+
+			   		<div class="form-group col-lg-8">
+			   			<select class="custom-select form-control" id="exp-month">
+						  <option value="1">1 - January</option>
+						  <option value="2">2 - February</option>
+						  <option value="3">3 - March</option>
+						  <option value="4">4 - April</option>
+						  <option value="5">5 - May</option>
+						  <option value="6">6 - June</option>
+						  <option value="7">7 - July</option>
+						  <option value="8">8 - August</option>
+						  <option value="9">9 - September</option>
+						  <option value="10">10 - October</option>
+						  <option value="11">11 - November</option> 
+						  <option value="12">12 - December</option>
+						  </select> 
+			   		</div>
+
+			   		<div class="form-group col-lg">
+			   			<select class="custom-select form-control" id="exp-year">
+						  <option value="2016">2016</option>
+						  <option value="2017">2017</option>
+						  <option value="2018">2018</option>
+						  <option value="2019">2019</option>
+						  <option value="2020">2020</option>
+						</select> 					
+			   		</div>
+			   </div>
+			   <hr class="mb-4">
+			   <button type="submit" class="btn btn-primary">Submit</button>
+			</form> <!-- /registration form -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- /Modal -->
 
 
 

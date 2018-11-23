@@ -9,7 +9,11 @@
 
 	<title>Juan Divers</title>
 
+	<!-- Fav icon -->
+	<link rel="icon" type="image/jpg/png" href="assets/images/juanlogo.jpg">
+
 	<!-- Fontawesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- Animate CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -48,6 +52,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
+					<li class="nav-item">
+						<button id="navbtn" type="button" class="btn btn-block btn btn-outline-primary btn-lg form-btn" data-toggle="modal" data-target="#register">Dive Book</button>
+					</li>
 				</ul> <!-- /ul navbar -->
 			</div> <!-- /div list -->
 		</div> <!-- /container-fluid -->
@@ -57,14 +64,14 @@
 
 	<div class="container img-fluid">
 		<div class="about-image">
-			<img src="assets/images/aboutimg3.png" alt="scuba lesson">
+			<img class="about-img" src="assets/images/aboutimg3.png" alt="scuba lesson">
 			<h3 class="p-1">About our Company</h3>
 			<p class="text-justify">We are <em>PROFESSIONAL SCUBA DIVING INTERNATIONAL</em> (PSI) – <strong>Juan Divers</strong>. We are a group of divers and diving instructors duly recognized by the <em>Worldwide Underwater Federation</em> (CMAS) and the <em>National Association of Underwater Instructors</em> (NAUI). Our origins is the beautiful Brazil. Our rediscovery of the beauty of the Philippines’ 7,107 captivating islands and its magnificent seas has brought us halfway around the world to infect people with that same zest for diving and underwater exploration.</p>
 		</div> <!-- /About our Company -->
 
 
 		<div class="about-image">
-			<img src="assets/images/aboutimg4.jpg" alt="scuba lesson one on one">
+			<img class="about-img" src="assets/images/aboutimg4.jpg" alt="scuba lesson one on one">
 			<h3 class="p-1">Mission</h3>
 			<p class="text-justify">This Group inteds to introduce <abbr title="Self-Contained Underwater Breathing Apparatus">SCUBA</abbr> Diving to the Filipino community in a way that is affordable, practical, fun and enjoyable while promoting and giving awareness to the importance of conservation and protection of marine life and its oceans.</p>
 			<p class="text-justify">Juan Divers aims to teach SCUBA diving in a way that is affordable and enjoyable while increasing awareness to the importance of conservation of our oceans.</p>
@@ -78,14 +85,14 @@
 			<div class="about-image">
 				<h3 class="pt-3">WE LOVE NATURE!</h3>
 				<p class="text-justify">The earth is too beautiful to waste, with the Philippines as the global epicentre of marine biodiversity. As a non-government organization that aims to protect and preserve the Philippines’ rich marine life through diving and exploration, we actively seek and keep an eye for unexplored diving sites. With this, we establish  contacts with local authorities to help us implement advance protection methods on the sites and and rescue trainings to help local water rescue units more efficiently carry out rescue operations. Our main goal in each exploration is to help protect and preserve these God-given resources so that the next generations can experience what we are enjoying today.</p>
-				<img src="assets/images/aboutimg5.jpg" alt="scuba lesson one on one">
+				<img class="about-img" src="assets/images/aboutimg5.jpg" alt="scuba lesson one on one">
 			</div> <!-- /We Love Nature -->
 
 			<div class="about-image">
 				<h3>WE BELIEVE IN THE DIVER IN EACH PERSON</h3>
 				<p class="text-justify">We are fully equipped with the knowledge and the gears for deep diving rescue operations. We actively conduct rescue trainings with public and private agencies to raise awareness in caring for the seas. PSI is in partnership with the Philippine Coast Guard district, which enable us to respond to their requests for assistance whenever necessary.</p>
 				<p class="text-justify">We conduct affordable trainings and recreational underwater explorations for our beach patrons and visitors. From the moment they arrive at the beach to the time they surface the cool waters from a successful dive, we ensure that each experience is truly educational and highly enjoyable. This is the PSI commitment and our deep aspirations to create a diver in you.</p>
-				<img src="assets/images/aboutimg6.jpg" alt="scuba lesson one on one">
+				<img class="about-img" src="assets/images/aboutimg6.jpg" alt="scuba lesson one on one">
 			</div> <!-- /Believe in the Diver -->
 		</div> <!-- /2nd container -->
 
@@ -96,6 +103,144 @@
 	<footer class="footer bg-primary">
 		<p class="text-center mb-0 p-2">Alvin G. Suanco | Tuitt Coding Boothcamp</p>
 	</footer>
+
+	<!-- ========
+	    Modal 
+	======== -->
+
+	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header bg-info text-white">
+	        <h5 class="modal-title" id="exampleModalLabel">Dive Book</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      <!-- registration form -->
+	      <form>
+	      	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<strong>Hurry!</strong> Discount on early book this summer.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			  <div class="form-group">
+			  	<h5 class="mb-4">Basic Info</h5>
+			    <label for="name"> Full Name:</label>
+			    <input type="text" class="form-control" id="name">
+			  </div>
+			  <div class="form-group">
+			    <label for="email"> Email:</label>
+			    <input type="email" class="form-control" id="email">
+			  </div>
+			  <div class="form-group">
+			    <label for="contact"> Contact:</label>
+			    <input type="number" class="form-control" id="contact">
+			  </div>
+			  <div class="form-group">
+			    <label for="contact"> Dive Date:</label>
+			    <input type="date" class="form-control" id="date">
+			  </div>
+			   <div class="form-group">
+			   	<label for="role"> Course:</label>
+			   	<select class="custom-select">
+			   		<option value="other">Others</option>
+			   		<option value="open water diver">Open Water Diver</option>
+					<option value="advanced open water diver">Advanced Open Water Diver</option>
+					<option value="emergency first response">Emergency First Response</option>
+					<option value="rescue diver">Rescue Diver</option>
+					<option value="Divemaster Course">Divemaster Course</option>
+					<option value="Divemaster Course">Into Dive 1</option>
+					<option value="Divemaster Course">Dive 2-6</option>  
+			   	</select>
+			   </div>
+
+			   <hr class="my-4">
+			   <h5 class="mb-4"> Additional Dive</h5>
+
+			   <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Fun Dive</span>
+			   		</label>
+			   </div>
+			   <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Free Dive</span>
+			   		</label>
+			   </div>
+			    <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Snorkling</span>
+			   		</label>
+			   </div>
+
+			   <hr class="mb-4">
+			   <h5 class="mb-4">Payment Info</h5>
+
+			   <div class="form-row ">
+				   <div class="col-lg-6">
+				    <label for="cc-num">Card Number:</label>
+				    <input class="form-control" id="cc-num" type="text">
+			   </div>
+
+			   <div class="col-lg">
+				    <label for="zip">Zip Code:</label>
+				    <input class="form-control" id="zip" type="text">
+			   </div>
+
+			   <div class="col-lg">
+				    <label for="cvv">CVV:</label>
+				    <input class="form-control" id="cvv" type="text">
+				   </div>
+			   </div>
+
+			   <div class="form-row">
+			   		<label class="col-lg-12">Expiration Date:</label>
+
+			   		<div class="form-group col-lg-8">
+			   			<select class="custom-select form-control" id="exp-month">
+						  <option value="1">1 - January</option>
+						  <option value="2">2 - February</option>
+						  <option value="3">3 - March</option>
+						  <option value="4">4 - April</option>
+						  <option value="5">5 - May</option>
+						  <option value="6">6 - June</option>
+						  <option value="7">7 - July</option>
+						  <option value="8">8 - August</option>
+						  <option value="9">9 - September</option>
+						  <option value="10">10 - October</option>
+						  <option value="11">11 - November</option> 
+						  <option value="12">12 - December</option>
+						  </select> 
+			   		</div>
+
+			   		<div class="form-group col-lg">
+			   			<select class="custom-select form-control" id="exp-year">
+						  <option value="2016">2016</option>
+						  <option value="2017">2017</option>
+						  <option value="2018">2018</option>
+						  <option value="2019">2019</option>
+						  <option value="2020">2020</option>
+						</select> 					
+			   		</div>
+			   </div>
+			   <hr class="mb-4">
+			   <button type="submit" class="btn btn-primary">Submit</button>
+			</form> <!-- /registration form -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- /Modal -->
+
 
 
 

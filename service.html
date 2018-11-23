@@ -9,8 +9,12 @@
 
 	<title>Juan Divers</title>
 
-	<!-- Fontawesome icon -->
+	<!-- Fav icon -->
+	<link rel="icon" type="image/jpg/png" href="assets/images/juanlogo.jpg">
 
+	<!-- Fontawesome icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
 	<!-- Animate CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
@@ -48,6 +52,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
+					<li class="nav-item">
+						<button id="navbtn" type="button" class="btn btn-block btn btn-outline-primary btn-lg form-btn" data-toggle="modal" data-target="#register">Dive Book</button>
+					</li>
 				</ul>
 			</div> <!-- end of div list -->
 		</div> <!-- end of container-fluid -->
@@ -56,14 +63,14 @@
 
 	<!-- Dive Course and Rates -->
 
-	<section class="container-fluid">
+	<section class="container-fluid p-4">
 		<h2 class="text-center certified mb-4">Scuba Dive Crouse</h2>
 		<div class="row">
 			<div class="col-12 col-md-6 col-lg-6">
-				<table class="table table-bordered">
+				<table class="table table-bordered table-hover">
 				  <thead>
-				    <tr>
-				      <th scope="col">Course</th>
+				    <tr class="table-info">
+				      <th scope="col">Package Course</th>
 				      <th scope="col">Day/hours</th>
 				      <th scope="col">Dives</th>
 				      <th scope="col">Cost</th>
@@ -91,7 +98,7 @@
 				     <tr>
 				      <th scope="row">Rescue Diver</th>
 				      <td>3 Days</td>
-				      <td>12 Sessions</td>
+				      <td>12</td>
 				      <td>Php 18,000</td>
 				    </tr>
 				     <tr>
@@ -104,10 +111,10 @@
 				</table>
 			</div> <!-- left side -->
 			<div class="col-12 col-md-6 col-lg-6">
-				<table class="table table-bordered">
+				<table class="table table-bordered table-hover">
 				  <thead>
-				    <tr>
-				     <th scope="col">Course</th>
+				    <tr class="table-info">
+				     <th scope="col">Basic Course</th>
 				      <th scope="col">Day/hours</th>
 				      <th scope="col">Dives</th>
 				      <th scope="col">Cost</th>
@@ -121,22 +128,35 @@
 				      <td>Php 2,500</td>
 				    </tr>
 				    <tr>
+				      <th scope="row">Snorkling</th>
+				      <td>1 day</td>
+				      <td>N/A</td>
+				      <td>Php 500</td>
+				    </tr>
+				    <tr>
 				      <th scope="row">Intor Dive</th>
 				      <td>1 day</td>
 				      <td>1</td>
 				      <td>Php 3,500</td>
 				    </tr>
 				    <tr>
-				      <th scope="row">Consecutive Dive* (up to 6 dive)</th>
+				      <th scope="row">Consecutive Dive (up to 6 dive)</th>
 				      <td>1 day</td>
 				      <td>1</td>
 				      <td>Php 2,500</td>
+				      <tr>
+				      <th scope="row">Boat Dive</th>
+				      <td>1 day</td>
+				      <td>1</td>
+				      <td>Php 2,000</td>
+				    </tr>
 				    </tr>
 				  </tbody>
 				</table>
-				<small class="text-danger">Foods and Hotel not included in this offer*</small>
+				<small class="text-danger d-block">Room not included in this offer*</small>
+				<small class="text-danger">This include Breakfast, Lunch and Diving Gear*</small>
 			</div> <!-- right side -->
-	</section> <!-- /container -->
+	</section><!--  /container -->
 
 	<!-- /Dive Course and Rates -->
 
@@ -157,8 +177,6 @@
 		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 		      <div class="card-body">
 		        The Open Water Diver course is flexible and performance based, which means that your Juan Divers can offer a wide variety of schedules, organized according to how fast you progress. It’s possible to complete your confined and open water dives in three or four days by completing the knowledge development portion via Juan Divers Open Course.
-
-				Your Juan Divers Instructor will focus on helping you become a confident and comfortable diver, not on how long it takes. You earn your certification based on demonstrating you know what you need to know and can do what you need to do. This means that you progress at your own pace – faster or slower depending upon the time you need – to become a competent scuba diver.
 		      </div>
 		    </div>
 		  </div>
@@ -238,6 +256,142 @@
 	</footer>
 
 
+	<!-- ========
+	    Modal 
+	======== -->
+
+	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header bg-info text-white">
+	        <h5 class="modal-title" id="exampleModalLabel">Dive Book</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      <!-- registration form -->
+	      <form>
+	      	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<strong>Hurry!</strong> Discount on early book this summer.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			  <div class="form-group">
+			  	<h5 class="mb-4">Basic Info</h5>
+			    <label for="name"> Full Name:</label>
+			    <input type="text" class="form-control" id="name">
+			  </div>
+			  <div class="form-group">
+			    <label for="email"> Email:</label>
+			    <input type="email" class="form-control" id="email">
+			  </div>
+			  <div class="form-group">
+			    <label for="contact"> Contact:</label>
+			    <input type="number" class="form-control" id="contact">
+			  </div>
+			  <div class="form-group">
+			    <label for="contact"> Dive Date:</label>
+			    <input type="date" class="form-control" id="date">
+			  </div>
+			   <div class="form-group">
+			   	<label for="role"> Course:</label>
+			   	<select class="custom-select">
+			   		<option value="other">Others</option>
+			   		<option value="open water diver">Open Water Diver</option>
+					<option value="advanced open water diver">Advanced Open Water Diver</option>
+					<option value="emergency first response">Emergency First Response</option>
+					<option value="rescue diver">Rescue Diver</option>
+					<option value="Divemaster Course">Divemaster Course</option>
+					<option value="Divemaster Course">Into Dive 1</option>
+					<option value="Divemaster Course">Dive 2-6</option>  
+			   	</select>
+			   </div>
+
+			   <hr class="my-4">
+			   <h5 class="mb-4"> Additional Dive</h5>
+
+			   <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Fun Dive</span>
+			   		</label>
+			   </div>
+			   <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Free Dive</span>
+			   		</label>
+			   </div>
+			    <div>
+			   		<label>
+			   			<input type="checkbox" name="custom-control-input">
+			   			<span class="custom-control-indicator"></span>
+			   			<span class="cutom-control-description">Snorkling</span>
+			   		</label>
+			   </div>
+
+			   <hr class="mb-4">
+			   <h5 class="mb-4">Payment Info</h5>
+
+			   <div class="form-row ">
+				   <div class="col-lg-6">
+				    <label for="cc-num">Card Number:</label>
+				    <input class="form-control" id="cc-num" type="text">
+			   </div>
+
+			   <div class="col-lg">
+				    <label for="zip">Zip Code:</label>
+				    <input class="form-control" id="zip" type="text">
+			   </div>
+
+			   <div class="col-lg">
+				    <label for="cvv">CVV:</label>
+				    <input class="form-control" id="cvv" type="text">
+				   </div>
+			   </div>
+
+			   <div class="form-row">
+			   		<label class="col-lg-12">Expiration Date:</label>
+
+			   		<div class="form-group col-lg-8">
+			   			<select class="custom-select form-control" id="exp-month">
+						  <option value="1">1 - January</option>
+						  <option value="2">2 - February</option>
+						  <option value="3">3 - March</option>
+						  <option value="4">4 - April</option>
+						  <option value="5">5 - May</option>
+						  <option value="6">6 - June</option>
+						  <option value="7">7 - July</option>
+						  <option value="8">8 - August</option>
+						  <option value="9">9 - September</option>
+						  <option value="10">10 - October</option>
+						  <option value="11">11 - November</option> 
+						  <option value="12">12 - December</option>
+						  </select> 
+			   		</div>
+
+			   		<div class="form-group col-lg">
+			   			<select class="custom-select form-control" id="exp-year">
+						  <option value="2016">2016</option>
+						  <option value="2017">2017</option>
+						  <option value="2018">2018</option>
+						  <option value="2019">2019</option>
+						  <option value="2020">2020</option>
+						</select> 					
+			   		</div>
+			   </div>
+			   <hr class="mb-4">
+			   <button type="submit" class="btn btn-primary">Submit</button>
+			</form> <!-- /registration form -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- /Modal -->
 
 
 

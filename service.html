@@ -31,9 +31,10 @@
 </head>
 <body>
 
-<!-- Navigation Section -->
-	<nav class="navbar nav-pills navbar-expand-md navbar-dark bg-dark sticky-top">
-		<div class="container-fluid">
+<!-- =================== Navigation Section===================== -->
+    <header class="container-fluid p-0">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		
 			<a class="navbar-brand" href="#"><img src="assets/images/juanlogo.jpg"> Juan Divers </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pagsection">
 				<span class="navbar-toggler-icon"></span>	
@@ -47,123 +48,127 @@
 						<a class="nav-link" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="sevice.html">Service</a>
+						<a class="nav-link active" href="service.html">Service</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item mr-2">
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 					<li class="nav-item">
 						<button id="navbtn" type="button" class="btn btn-block btn btn-outline-primary btn-lg form-btn" data-toggle="modal" data-target="#register">Dive Book</button>
 					</li>
 				</ul>
-			</div> <!-- end of div list -->
-		</div> <!-- end of container-fluid -->
-	</nav> <!-- end of navigation section -->
+			</div> <!-- /div list -->
+		</nav> <!-- /of navbar -->
+	</header> <!-- /container-fluid -->
+
+	<!-- =================== /Navigation section ===================-->
 	
 
 	<!-- Dive Course and Rates -->
 
-	<section class="container-fluid p-4">
-		<h2 class="text-center certified mb-4">Scuba Dive Crouse</h2>
-		<div class="row">
-			<div class="col-12 col-md-6 col-lg-6">
-				<table class="table table-bordered table-hover">
-				  <thead>
-				    <tr class="table-info">
-				      <th scope="col">Package Course</th>
-				      <th scope="col">Day/hours</th>
-				      <th scope="col">Dives</th>
-				      <th scope="col">Cost</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <th scope="row">Open Water Diver (OW)</th>
-				      <td>3 Days</td>
-				      <td>4</td>
-				      <td>Php 17,500</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">Advanced Open Water Diver (AOW)</th>
-				      <td>2 Days</td>
-				      <td>5</td>
-				      <td>Php 16,000</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">Emergency First Response (EFR)</th>
-				      <td>8 hours</td>
-				      <td>N/A</td>
-				      <td>Php 8,000</td>
-				    </tr>
-				     <tr>
-				      <th scope="row">Rescue Diver</th>
-				      <td>3 Days</td>
-				      <td>12</td>
-				      <td>Php 18,000</td>
-				    </tr>
-				     <tr>
-				      <th scope="row">Divemaster Course</th>
-				      <td>2 Weeks</td>
-				      <td>Varies</td>
-				      <td>Php 55,000</td>
-				    </tr>
-				  </tbody>
-				</table>
-			</div> <!-- left side -->
-			<div class="col-12 col-md-6 col-lg-6">
-				<table class="table table-bordered table-hover">
-				  <thead>
-				    <tr class="table-info">
-				     <th scope="col">Basic Course</th>
-				      <th scope="col">Day/hours</th>
-				      <th scope="col">Dives</th>
-				      <th scope="col">Cost</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <th scope="row">Free Diving</th>
-				      <td>1 day</td>
-				      <td>2</td>
-				      <td>Php 2,500</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">Snorkling</th>
-				      <td>1 day</td>
-				      <td>N/A</td>
-				      <td>Php 500</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">Intor Dive</th>
-				      <td>1 day</td>
-				      <td>1</td>
-				      <td>Php 3,500</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">Consecutive Dive (up to 6 dive)</th>
-				      <td>1 day</td>
-				      <td>1</td>
-				      <td>Php 2,500</td>
-				      <tr>
-				      <th scope="row">Boat Dive</th>
-				      <td>1 day</td>
-				      <td>1</td>
-				      <td>Php 2,000</td>
-				    </tr>
-				    </tr>
-				  </tbody>
-				</table>
-				<small class="text-danger d-block">Room not included in this offer*</small>
-				<small class="text-danger">This include Breakfast, Lunch and Diving Gear*</small>
-			</div> <!-- right side -->
-	</section><!--  /container -->
+	<section class="container p-4 mt-4">
+		<div class="container-fluid">
+			<h2 class="text-center mb-4 font-diver">Scuba Dive Course</h2>
+			 <!-- 1st Table -->
+			 	<div class="table-responsive">
+					<table class="table table-bordered table-hover">
+					  <thead>
+					    <tr class="table-info">
+					      <th scope="col">Package Course</th>
+
+					      <th scope="col">Dives</th>
+					      <th scope="col">Cost</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">Open Water Diver</th>
+
+					      <td>4</td>
+					      <td>Php 17,500</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Advanced Open Water Diver</th>
+
+					      <td>5</td>
+					      <td>Php 16,000</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Emergency First Response</th>
+
+					      <td>N/A</td>
+					      <td>Php 8,000</td>
+					    </tr>
+					     <tr>
+					      <th scope="row">Rescue Diver</th>
+
+					      <td>12</td>
+					      <td>Php 18,000</td>
+					    </tr>
+					     <tr>
+					      <th scope="row">Divemaster Course</th>
+
+					      <td>Varies</td>
+					      <td>Php 55,000</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div> <!-- 1st Table -->
+				<div class="table-responsive">  <!-- 2nd Table -->
+					<table class="table table-bordered table-hover">
+					  <thead>
+					    <tr class="table-info">
+					     <th scope="col">Basic Course</th>
+					 
+					      <th scope="col">Dives</th>
+					      <th scope="col">Cost</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">Free Diving</th>
+					     
+					      <td>2</td>
+					      <td>Php 2,500</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Snorkling</th>
+					    
+					      <td>N/A</td>
+					      <td>P500</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Intor Dive</th>
+					   
+					      <td>1</td>
+					      <td>P3,500</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Consecutive Dive(up to 6 dive)</th>
+					
+					      <td>1</td>
+					      <td>Php 2,500</td>
+					      <tr>
+					      <th scope="row">Boat Dive</th>
+					    
+					      <td>1</td>
+					      <td>Php 2,000</td>
+					    </tr>
+					    </tr>
+					  </tbody>
+					</table>
+					<small class="text-danger d-block">Room not included in this offer*</small>
+					<small class="text-danger">This include Breakfast, Lunch and Diving Gear*</small>
+				</div> <!-- /2nd Table side -->
+			</div>  <!-- /container -->
+	</section>
 
 	<!-- /Dive Course and Rates -->
 
 	<!-- FQA's Section -->
 
-	<section class="container mb-5">
-		<h2 class="text-center certified mb-4">Become a Certified Scuba Diver FAQs</h2>
+	<section class="container mb-5 mt-4">
+		<h2 class="text-center certified mb-4 font-diver">Become a Certified Scuba Diver FAQs</h2>
 		<div class="accordion" id="accordionExample">
 		  <div class="card">
 		    <div class="card-header" id="headingOne">
@@ -198,7 +203,7 @@
 		    <div class="card-header" id="headingThree">
 		      <h5 class="mb-0">
 		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		          What are the requirements for learning to scuba dive?
+		          What are the requirements?
 		        </button>
 		      </h5>
 		    </div>
@@ -215,50 +220,84 @@
 		    <div class="card-header" id="headingFour">
 		      <h5 class="mb-0">
 		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-		          Do I have to be a good swimmer to scuba dive?
+		          Will my ears hurt?
 		        </button>
 		      </h5>
 		    </div>
 
 		    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 		      <div class="card-body">
-		        Some swimming ability is required. You need to have basic swim skills and be able to comfortably maintain yourself in the water. Your Instructor will assess this by having you:
-
-				Swim 200 metres/yards (or 300 metres/yards in mask, fins and snorkel). There is no time limit for this, and you may use any swimming strokes you want.
-				Float and tread water for 10 minutes, again using any methods you want.
-				Any individual who can meet the performance requirements of the course qualifies for certification. There are many adaptive techniques that allow individuals with physical challenges to meet these requirements. People with paraplegia, amputations and other challenges commonly earn the PADI Open Water Diver certification.
-		      </div>
+		        Sometimes on a flight or diving down to the bottom of a swimming pool you may feel pain. This is because the air pressure is increasing and squeezing your ears. This won’t be a problem while you are diving because your Instructor will teach you a simple technique to prevent this (called ‘equalisation’). You’ll be able to use this technique on flights and in the swimming pool too!
 		    </div>
 		  </div>
 		  </div> <div class="card">
 		    <div class="card-header" id="headingFive">
 		      <h5 class="mb-0">
 		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-		          My ears hurt when I go to the bottom of a swimming pool or when I dive down. Will that prevent me from becoming a scuba diver?
+		         Do I need to get a medical certificate?
 		        </button>
 		      </h5>
 		    </div>
 
 		    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
 		      <div class="card-body">
-		        No, assuming you have no irregularities in your ears and sinuses. The discomfort is the normal effect of water pressure pressing in on your ear drums. Fortunately, our bodies are designed to adjust for pressure changes in our ears – you just need to learn how. If you have no difficulties adjusting to air pressure during flying, you'll probably experience no problem learning to adjust to water pressure while diving.
+		        As a beginner we need to make sure that you are fit for diving. Please read the questions on Page 1 of this medical statement. If you can answer ‘no’ to every question you don’t need to see a doctor. If you answer ‘yes’ to any question you will need to see a doctor before you can dive. The doctor should complete Page 2. You can visit a doctor in your home country or we can help you to find a doctor here in Bali. The doctor doesn’t need to be a diving specialist.
 		      </div>
 		    </div>
 		  </div>
 		</div>
 	</section> <!-- / container fluid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- /FQA's Section -->
 
-	<!-- Footer Section -->
-
-	<footer class="footer bg-primary">
-		<p class="text-center mb-0 p-2">Alvin G. Suanco | Tuitt Coding Boothcamp</p>
-	</footer>
+	
 
 
-	<!-- ========
-	    Modal 
-	======== -->
+
+
+
+
+
+	                       <!--=====================================================
+	                                   Modal Section
+	                        ==================================================== -->
 
 	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
 	  <div class="modal-dialog" role="document">

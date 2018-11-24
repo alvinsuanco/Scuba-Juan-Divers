@@ -4,7 +4,11 @@
 	box-sizing: border-box;
 	font-family: 'Oxygen', sans-serif;
 	font-family: 'Merriweather', serif;
-} /*CSS Reset*/
+} 
+
+/*===============CSS Reset=====================*/
+
+
 
 html { 
 	scroll-behavior: smooth;
@@ -14,27 +18,33 @@ body {
 	background-color: #F7F7F8;
 }
 
-/*Landing Page*/
-
-.jumbotron hr {
-	background-color: #fff; /*white*/
+.font-diver {
+	color: indianred;
 }
 
+
+
+/*=================Landing Page======================*/
+
+.jumbotron hr {
+	background-color: black; 
+}
 .jumbotron p {
-	color: #fff; /*white*/
+	color: black; 
 }
 
 .btn a {
 	text-decoration: none;
-	color: #fff; /*white*/
+	color: black; 
 }
+
 
 #jumbo-land {
 	height: 100vh;
 	padding-top: 5%;
 	/*background-color: #333; /*offblack*/*/
 	border-radius: 0; /*remove jumbo rounded corner*/
-	background-image: url(../images/landpagebg.jpg);
+	background-image: url(../images/landing-bg23.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -42,7 +52,7 @@ body {
 }
 
 .land-font {
-	color: #C9F0FF;
+	color: black;
 	font-weight: bold;
 }
 
@@ -52,16 +62,16 @@ body {
 	border-radius: 50%;
 }
 
-#navbar {
-	color: white;
-}
 
-/*End of Landing Page*/
+/*======================End of Landing Page===================*/
 
-/*Navigation Section*/
+
+
+
+/*=======================Navigation Section====================*/
 
 #navbtn {
-	width: 140px;
+	width: 130px;
 	height: 50px;
 
 
@@ -81,22 +91,23 @@ body {
 	margin-left: 10px;
 }
 
-/*End of Navigation Section*/
+/*=====================End of Navigation Section================*/
 
-/*Start of Home Page*/
 
-.carousel-item {
-	height: 90vh;
+
+
+/*=======================Start of Home Page========================*/
+
+.parallax-pagebg {
+	background-image: url(../images/fish-bg.jpg);
+	width: 100%;
+	height: 60vh;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.first {
-	height: 90vh;
-}
-
-.next-prev{
-	padding-left: 20px;
-
-}
 
 .expedition-note {
 	margin-top: 100px;
@@ -105,97 +116,58 @@ body {
 }
 
 
-/*.happydivers {
-	height: 200px;
-	width: 230px;
-}*/
-
-
-#carousel-card {
-	margin-top: 100px;
-	/*border: 1px solid black;*/
-	height: 450px;
-	width: 90%;	
-}
-
-.happydiver {
-	margin: 10px;
-	padding: 10px;
-	text-align: center;
-	color: indianred;
-}
-
-.card-bg {
-	border: 1px dashed black;
-}
-
-.card-img9 {
-	height: 220px;
-	width: 150px;
-}
-
 .dive-icon {
 	color: maroon;
 }
 
-.video-section {
-	/*background-color: #E8E6E6;*/
-	/*padding: 10px;*/
+.hwimgl {
+	height: 450px; 
+	width: 1000px;
+	border: 1px solid black;
+	padding: 1px;
+	
+
 }
 
-.video {
-	margin-left: 30%;
+.hwimg {
+	height: 250px; 
+	width: 300px;
+	border: 1px solid black;
+	
 }
 
-/*End of Home Page*/
-
-
-
-/*About Page*/
-
-
-.about-image img {
-	width: 80%;
-	height: 200px;
-	margin: 20px;
-	padding-left: 10%;
-}
-
-.parallax {
-
-	background-image: url(../images/parallaximg1.jpg);
-	width: 100%;
-	height: 40vh;
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.home-expe {
+	margin-right: 10px;
 }
 
 
-/*end of About Page*/
+
+/*==============================End of Home Page=================*/
+
+
+
+/*===============================About Page==========================*/
+
+
+.aboutimg {
+	height: 600px;
+	width: 700px;
+}
+
+
+/*========================End of About Page=============================*/
 
 
 /*Service Page*/
 
-.certified {
-	margin-top: 50px;
-	color: indianred;
-}
+
 
 
 /*/Service Page*/
 
 /*Contact Page*/
 
-#header-row {
-	padding: 0;
-}
 
-.contact-us {
-	margin: 20px 0 20px 20px;
-	padding: 0;
-}
 
 .maps {
 	margin-left: 15px;
@@ -214,23 +186,6 @@ ul {
 
 }
 
-.contact-us > ul > li{
-	margin: 10px;
-	padding: 10px;
-}
-
-
-.social-img {
-	height: 50px;
-	width: 50px;
-	padding: 5px;
-	margin: 5px;
-	border-radius: 50%;
-}
-
-.operation {
-	text-align: center;
-}
 
 .form-details {
 	width: 80%;
@@ -242,9 +197,6 @@ ul {
 	width: 50%;
 }
 
-.contactfont {
-	color: indianred;
-}
 
 .img-anilao {
 	height: 500px;
@@ -253,24 +205,16 @@ ul {
 	padding: 20px;
 }
 
-
-/*End of Contact Page*/
-
-/*Footer*/
-
-footer {
-	height: 60px;
-}
-
 .social-icon {
 	height: 40px;
 	width: 40px;
 	margin: 3px;
 	border-radius: 40%;
-
-
 }
 
+/*End of Contact Page*/
+
+/*Footer*/
 
 
 
@@ -299,17 +243,7 @@ footer {
 
 /*mobile device*/
 @media only screen and (max-width: 400px) {
-	.media-img {
-		display: none;
-	}
-
-	.video {
-		display: none;
-	}
-
-	#carousel-card {
-		height: 10px;
-	}
+	
 
 	.img-anilao {
 		height: 250px;
@@ -326,18 +260,35 @@ footer {
 	.maps {
 		height: 300px;
 		width: 350px;
+		width: 95%
 	}
 
-	
+	.aboutimg {
+		height: 250px;
+		width: 300px;
+	}
+
+	.parallax-pagebg { 
+		height: 60vh;
+	}
 
 }
-
 
 
 
 /*Table Styles*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+
+	.maps {
+		height: 300px;
+		width: 350px;
+		width: 95%
+	}
+
+	.img-anilao {
+		margin-left: 8%;
+	 }	
 }
 
 

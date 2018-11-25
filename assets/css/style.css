@@ -22,54 +22,24 @@ body {
 	color: indianred;
 }
 
+.gotobtn {
+	height: 70px;
+	width: 70px;
+
+}
+
 
 
 /*=================Landing Page======================*/
 
-/*.jumbotron hr {
-	background-color: black; 
-}
-.jumbotron p {
-	color: black; 
-}
-
-.btn a {
-	text-decoration: none;
-	color: black; 
-}
-
-
-#jumbo-land {
-	height: 100vh;
-	padding-top: 5%;
-
-	background-image: url(../images/landing-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	opacity: .9
-}
-
-.land-font {
-	color: black;
-	font-weight: bold;
-}
-
-.Juandiverslogo {
-
-	border-radius: 50%;
-	margin-left: 30%;
-}
-*/
 
 #landbg {
 	height: 100vh;
 	padding-top: 5%;
-	background-image: url(../images/oceanbg1.gif);
+	background-image: url(../images/oceanbg.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	
+	background-position: center;	
 }
 
 .header{
@@ -81,14 +51,12 @@ body {
 }
 
 .header h1 {
-	color: #FFF0E5;
+	color: #FCF7FF; /*GHOST WHITE*/
 	font-size: 100px;
-
-
 }
 
 .header h3	{
-	color: white;
+	color: #FCF7FF;
 	font-size: 50px;
 }
 
@@ -97,12 +65,16 @@ body {
 	font-size: 20px;
 	margin-top: 50px;
 	font-weight: bolder;
-	border: 1px solid #FFF0E5;
+	border: 1px solid #FCF7FF;
+
+
 }
 
 .header a {
-	color: #FFF0E5;
-	font-weight: bolder;*/
+	color: #FCF7FF;
+	font-weight: bolder;
+	font-size: 30px;
+	text-decoration: none;
 }
 
 
@@ -265,6 +237,14 @@ ul {
 
 /*End of Contact Page*/
 
+footer {
+	padding: 0;
+}
+
+.footerli-container {
+	padding-top: 15px;
+}
+
 /*Footer*/
 
 
@@ -326,8 +306,24 @@ ul {
 		background-attachment: scroll;
 	}
 
+	.header h3 {
+		font-size: 20px;
+	}
 
+	.header h1 {
+		font-size: 35px;
+	}
 
+	.header button {
+	padding: 10px 15px;
+	font-size: 5px;
+	margin-top: 20px;
+	font-weight: bolder;
+	border: 1px solid #FCF7FF;
+
+	#landbg {
+
+	}
 
 }
 

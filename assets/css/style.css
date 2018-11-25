@@ -26,7 +26,7 @@ body {
 
 /*=================Landing Page======================*/
 
-.jumbotron hr {
+/*.jumbotron hr {
 	background-color: black; 
 }
 .jumbotron p {
@@ -42,9 +42,8 @@ body {
 #jumbo-land {
 	height: 100vh;
 	padding-top: 5%;
-	/*background-color: #333; /*offblack*/*/
-	border-radius: 0; /*remove jumbo rounded corner*/
-	background-image: url(../images/landing-bg23.jpg);
+
+	background-image: url(../images/landing-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -57,9 +56,53 @@ body {
 }
 
 .Juandiverslogo {
-	height: 250px;
-	width: 250px;
+
 	border-radius: 50%;
+	margin-left: 30%;
+}
+*/
+
+#landbg {
+	height: 100vh;
+	padding-top: 5%;
+	background-image: url(../images/oceanbg1.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.header{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.header h1 {
+	color: #FFF0E5;
+	font-size: 100px;
+
+
+}
+
+.header h3	{
+	color: white;
+	font-size: 50px;
+}
+
+.header button {
+	padding: 20px 40px;
+	font-size: 20px;
+	margin-top: 50px;
+	font-weight: bolder;
+	border: 1px solid #FFF0E5;
+}
+
+.header a {
+	color: #FFF0E5;
+	font-weight: bolder;*/
 }
 
 
@@ -70,26 +113,33 @@ body {
 
 /*=======================Navigation Section====================*/
 
-#navbtn {
-	width: 130px;
-	height: 50px;
-
-
-}
-
-.navbar img{
+.navbar a img {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 }
 
 .navbar a {
-	font-size: 25px;
+	font-size: 20px;
 }
 
-.navbar span {
-	margin-left: 10px;
+.navbar ul li {
+	font-size: 10px;
 }
+
+#navbtn {
+	height: 40px;
+	width: 100px;
+	margin-top: 2px;
+	font-size: 15px;
+	padding: 0;
+} 
+
+
+
+
+
+
 
 /*=====================End of Navigation Section================*/
 
@@ -106,6 +156,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
@@ -245,6 +296,8 @@ ul {
 @media only screen and (max-width: 400px) {
 	
 
+
+
 	.img-anilao {
 		height: 250px;
 		width: 300px;
@@ -270,7 +323,11 @@ ul {
 
 	.parallax-pagebg { 
 		height: 60vh;
+		background-attachment: scroll;
 	}
+
+
+
 
 }
 
